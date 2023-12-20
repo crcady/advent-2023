@@ -11,5 +11,5 @@ I'm pretty sure I just overwote part one to do part two, because it was pretty s
 I haven't solved part 2 of this yet - and I'm not 100 percent sure of the state of the part one solver as I've been messing with part two. I solved part one using a mostly-stupid enumeration of the search space.
 
 ## Other days of interest 
-### Day 18
+### Day 17
 There's what I consider to be a really elegant encoding of the problem into shorteset path. There's a much less elegant but much more performant encoding in there also.
