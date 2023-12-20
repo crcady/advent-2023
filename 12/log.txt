@@ -1,0 +1,4682 @@
+[1]
+First Solution: 1
+???.###????.###????.###????.###????.###
+[1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3]
+Trying to solve ???.###????.###????.###????.###????.###
+entered _search(???, 5 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e8470>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e84d0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e84d0>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e84d0>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8470>]), ([1], [<__main__.Group object at 0x1071e84a0>]), ([], [<__main__.Group object at 0x1071e84a0>]), ([], [<__main__.Group object at 0x1071e84d0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 5 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8440>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8440>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 5 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 4 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 4 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(?, 5 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 4 right-groups, [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e87d0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e87d0>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8860>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8860>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8770>]), ([3], [<__main__.Group object at 0x1071e8890>]), ([3], [<__main__.Group object at 0x1071e8860>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8770>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8890>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8860>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8530>]), ([3], [<__main__.Group object at 0x1071e86b0>]), ([3], [<__main__.Group object at 0x1071e87d0>, <__main__.Group object at 0x1071e8440>]), ([3], [<__main__.Group object at 0x1071e8440>]), ([3], [<__main__.Group object at 0x1071e8770>]), ([3], [<__main__.Group object at 0x1071e8890>]), ([3], [<__main__.Group object at 0x1071e8860>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e8650>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e88c0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e88c0>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e88c0>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8650>]), ([1], [<__main__.Group object at 0x1071e8590>]), ([], [<__main__.Group object at 0x1071e8590>]), ([], [<__main__.Group object at 0x1071e88c0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e80e0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e80e0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(?, 4 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8ad0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8ad0>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e89e0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e89e0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8b00>]), ([3], [<__main__.Group object at 0x1071e8b60>]), ([3], [<__main__.Group object at 0x1071e89e0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8b00>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8b60>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e89e0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8740>]), ([3], [<__main__.Group object at 0x1071e88f0>]), ([3], [<__main__.Group object at 0x1071e8ad0>, <__main__.Group object at 0x1071e80e0>]), ([3], [<__main__.Group object at 0x1071e80e0>]), ([3], [<__main__.Group object at 0x1071e8b00>]), ([3], [<__main__.Group object at 0x1071e8b60>]), ([3], [<__main__.Group object at 0x1071e89e0>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e8830>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8c80>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8c80>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e8c80>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8830>]), ([1], [<__main__.Group object at 0x1071e8b90>]), ([], [<__main__.Group object at 0x1071e8b90>]), ([], [<__main__.Group object at 0x1071e8c80>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8c20>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8c20>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(?, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [3, 1, 1, 3, 1, 1, 3])
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8e00>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8e00>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8d40>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8d40>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8e30>]), ([3], [<__main__.Group object at 0x1071e8e90>]), ([3], [<__main__.Group object at 0x1071e8d40>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8e30>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8e90>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8d40>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8bc0>]), ([3], [<__main__.Group object at 0x1071e8cb0>]), ([3], [<__main__.Group object at 0x1071e8e00>, <__main__.Group object at 0x1071e8c20>]), ([3], [<__main__.Group object at 0x1071e8c20>]), ([3], [<__main__.Group object at 0x1071e8e30>]), ([3], [<__main__.Group object at 0x1071e8e90>]), ([3], [<__main__.Group object at 0x1071e8d40>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e8ec0>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8d70>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8d70>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e8d70>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8ec0>]), ([1], [<__main__.Group object at 0x1071e8fb0>]), ([], [<__main__.Group object at 0x1071e8fb0>]), ([], [<__main__.Group object at 0x1071e8d70>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8a70>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8a70>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(?, 2 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [3, 1, 1, 3])
+Looking for [3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e9190>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e9190>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e90d0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e90d0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e91c0>]), ([3], [<__main__.Group object at 0x1071e9220>]), ([3], [<__main__.Group object at 0x1071e90d0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e91c0>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e9220>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e90d0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8f80>]), ([3], [<__main__.Group object at 0x1071e9070>]), ([3], [<__main__.Group object at 0x1071e9190>, <__main__.Group object at 0x1071e8da0>]), ([3], [<__main__.Group object at 0x1071e8da0>]), ([3], [<__main__.Group object at 0x1071e91c0>]), ([3], [<__main__.Group object at 0x1071e9220>]), ([3], [<__main__.Group object at 0x1071e90d0>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e8a70>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9340>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9340>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e9340>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8a70>]), ([1], [<__main__.Group object at 0x1071e9250>]), ([], [<__main__.Group object at 0x1071e9250>]), ([], [<__main__.Group object at 0x1071e9340>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e92e0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e92e0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8a70>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8a70>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e91f0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e91f0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8e60>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8e60>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 2 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [3, 1, 1, 3])
+Looking for [3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e9220>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e9220>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e9190>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e9190>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e90d0>]), ([3], [<__main__.Group object at 0x1071e9250>]), ([3], [<__main__.Group object at 0x1071e9190>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e90d0>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e9250>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e9190>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8f50>]), ([3], [<__main__.Group object at 0x1071e9070>]), ([3], [<__main__.Group object at 0x1071e9220>, <__main__.Group object at 0x1071e8e60>]), ([3], [<__main__.Group object at 0x1071e8e60>]), ([3], [<__main__.Group object at 0x1071e90d0>]), ([3], [<__main__.Group object at 0x1071e9250>]), ([3], [<__main__.Group object at 0x1071e9190>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e8fb0>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9130>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9130>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e9130>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8fb0>]), ([1], [<__main__.Group object at 0x1071e8a70>]), ([], [<__main__.Group object at 0x1071e8a70>]), ([], [<__main__.Group object at 0x1071e9130>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9100>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9100>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8fb0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8fb0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9010>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9010>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8f50>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8f50>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8830>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8830>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [3, 1, 1, 3, 1, 1, 3])
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8dd0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8dd0>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8ce0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8ce0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8e90>]), ([3], [<__main__.Group object at 0x1071e8c50>]), ([3], [<__main__.Group object at 0x1071e8ce0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8e90>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8c50>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8ce0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8a10>]), ([3], [<__main__.Group object at 0x1071e8980>]), ([3], [<__main__.Group object at 0x1071e8dd0>, <__main__.Group object at 0x1071e8830>]), ([3], [<__main__.Group object at 0x1071e8830>]), ([3], [<__main__.Group object at 0x1071e8e90>]), ([3], [<__main__.Group object at 0x1071e8c50>]), ([3], [<__main__.Group object at 0x1071e8ce0>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e8f50>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8e00>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8e00>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e8e00>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8f50>]), ([1], [<__main__.Group object at 0x1071e9070>]), ([], [<__main__.Group object at 0x1071e9070>]), ([], [<__main__.Group object at 0x1071e8e00>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8b90>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8b90>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(?, 2 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [3, 1, 1, 3])
+Looking for [3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8fb0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8fb0>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e9250>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e9250>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e9010>]), ([3], [<__main__.Group object at 0x1071e8da0>]), ([3], [<__main__.Group object at 0x1071e9250>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e9010>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8da0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e9250>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8fe0>]), ([3], [<__main__.Group object at 0x1071e90d0>]), ([3], [<__main__.Group object at 0x1071e8fb0>, <__main__.Group object at 0x1071e8c20>]), ([3], [<__main__.Group object at 0x1071e8c20>]), ([3], [<__main__.Group object at 0x1071e9010>]), ([3], [<__main__.Group object at 0x1071e8da0>]), ([3], [<__main__.Group object at 0x1071e9250>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e8b90>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9340>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9340>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e9340>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8b90>]), ([1], [<__main__.Group object at 0x1071e9100>]), ([], [<__main__.Group object at 0x1071e9100>]), ([], [<__main__.Group object at 0x1071e9340>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8ef0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8ef0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8b90>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8b90>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9130>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9130>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8d40>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8d40>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 2 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [3, 1, 1, 3])
+Looking for [3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8da0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8da0>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8fb0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8fb0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e9250>]), ([3], [<__main__.Group object at 0x1071e9100>]), ([3], [<__main__.Group object at 0x1071e8fb0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e9250>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e9100>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8fb0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8f20>]), ([3], [<__main__.Group object at 0x1071e90d0>]), ([3], [<__main__.Group object at 0x1071e8da0>, <__main__.Group object at 0x1071e8d40>]), ([3], [<__main__.Group object at 0x1071e8d40>]), ([3], [<__main__.Group object at 0x1071e9250>]), ([3], [<__main__.Group object at 0x1071e9100>]), ([3], [<__main__.Group object at 0x1071e8fb0>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e9070>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8f80>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8f80>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e8f80>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9070>]), ([1], [<__main__.Group object at 0x1071e8b90>]), ([], [<__main__.Group object at 0x1071e8b90>]), ([], [<__main__.Group object at 0x1071e8f80>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9190>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9190>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9070>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9070>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9220>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9220>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8f20>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8f20>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8b30>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8b30>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8650>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8650>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 5 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 4 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8710>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8710>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8b00>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8b00>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8a10>]), ([3], [<__main__.Group object at 0x1071e8b30>]), ([3], [<__main__.Group object at 0x1071e8b00>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8a10>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8b30>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8b00>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8950>]), ([3], [<__main__.Group object at 0x1071e8ad0>]), ([3], [<__main__.Group object at 0x1071e8710>, <__main__.Group object at 0x1071e88c0>]), ([3], [<__main__.Group object at 0x1071e88c0>]), ([3], [<__main__.Group object at 0x1071e8a10>]), ([3], [<__main__.Group object at 0x1071e8b30>]), ([3], [<__main__.Group object at 0x1071e8b00>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e8740>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8830>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8830>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e8830>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8740>]), ([1], [<__main__.Group object at 0x1071e8c80>]), ([], [<__main__.Group object at 0x1071e8c80>]), ([], [<__main__.Group object at 0x1071e8830>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8cb0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8cb0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(?, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [3, 1, 1, 3, 1, 1, 3])
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8e00>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8e00>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8ce0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8ce0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8d70>]), ([3], [<__main__.Group object at 0x1071e90d0>]), ([3], [<__main__.Group object at 0x1071e8ce0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8d70>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e90d0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8ce0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8980>]), ([3], [<__main__.Group object at 0x1071e8e90>]), ([3], [<__main__.Group object at 0x1071e8e00>, <__main__.Group object at 0x1071e8cb0>]), ([3], [<__main__.Group object at 0x1071e8cb0>]), ([3], [<__main__.Group object at 0x1071e8d70>]), ([3], [<__main__.Group object at 0x1071e90d0>]), ([3], [<__main__.Group object at 0x1071e8ce0>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e9160>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8d10>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8d10>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e8d10>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9160>]), ([1], [<__main__.Group object at 0x1071e9100>]), ([], [<__main__.Group object at 0x1071e9100>]), ([], [<__main__.Group object at 0x1071e8d10>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8b60>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8b60>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(?, 2 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [3, 1, 1, 3])
+Looking for [3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e91c0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e91c0>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8f80>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8f80>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8bf0>]), ([3], [<__main__.Group object at 0x1071e9340>]), ([3], [<__main__.Group object at 0x1071e8f80>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8bf0>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e9340>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8f80>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8a70>]), ([3], [<__main__.Group object at 0x1071e9070>]), ([3], [<__main__.Group object at 0x1071e91c0>, <__main__.Group object at 0x1071e8f20>]), ([3], [<__main__.Group object at 0x1071e8f20>]), ([3], [<__main__.Group object at 0x1071e8bf0>]), ([3], [<__main__.Group object at 0x1071e9340>]), ([3], [<__main__.Group object at 0x1071e8f80>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e8b60>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e92e0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e92e0>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e92e0>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8b60>]), ([1], [<__main__.Group object at 0x1071e8ef0>]), ([], [<__main__.Group object at 0x1071e8ef0>]), ([], [<__main__.Group object at 0x1071e92e0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9280>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9280>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8b60>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8b60>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9130>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9130>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e90a0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e90a0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 2 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [3, 1, 1, 3])
+Looking for [3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e9340>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e9340>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e91c0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e91c0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8f80>]), ([3], [<__main__.Group object at 0x1071e8ef0>]), ([3], [<__main__.Group object at 0x1071e91c0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8f80>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8ef0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e91c0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e9250>]), ([3], [<__main__.Group object at 0x1071e9070>]), ([3], [<__main__.Group object at 0x1071e9340>, <__main__.Group object at 0x1071e90a0>]), ([3], [<__main__.Group object at 0x1071e90a0>]), ([3], [<__main__.Group object at 0x1071e8f80>]), ([3], [<__main__.Group object at 0x1071e8ef0>]), ([3], [<__main__.Group object at 0x1071e91c0>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e9100>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9190>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9190>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e9190>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9100>]), ([1], [<__main__.Group object at 0x1071e8b60>]), ([], [<__main__.Group object at 0x1071e8b60>]), ([], [<__main__.Group object at 0x1071e9190>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8c20>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8c20>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9100>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9100>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8fe0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8fe0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9250>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9250>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8740>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8740>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [3, 1, 1, 3, 1, 1, 3])
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8bc0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8bc0>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8e30>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8e30>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e90d0>]), ([3], [<__main__.Group object at 0x1071e8dd0>]), ([3], [<__main__.Group object at 0x1071e8e30>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e90d0>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8dd0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8e30>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8aa0>]), ([3], [<__main__.Group object at 0x1071e88f0>]), ([3], [<__main__.Group object at 0x1071e8bc0>, <__main__.Group object at 0x1071e8740>]), ([3], [<__main__.Group object at 0x1071e8740>]), ([3], [<__main__.Group object at 0x1071e90d0>]), ([3], [<__main__.Group object at 0x1071e8dd0>]), ([3], [<__main__.Group object at 0x1071e8e30>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e9250>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8e00>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8e00>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e8e00>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9250>]), ([1], [<__main__.Group object at 0x1071e9070>]), ([], [<__main__.Group object at 0x1071e9070>]), ([], [<__main__.Group object at 0x1071e8e00>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8c80>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8c80>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(?, 2 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [3, 1, 1, 3])
+Looking for [3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e9100>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e9100>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8ef0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8ef0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8fe0>]), ([3], [<__main__.Group object at 0x1071e8f20>]), ([3], [<__main__.Group object at 0x1071e8ef0>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8fe0>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8f20>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8ef0>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8fb0>]), ([3], [<__main__.Group object at 0x1071e8f80>]), ([3], [<__main__.Group object at 0x1071e9100>, <__main__.Group object at 0x1071e8cb0>]), ([3], [<__main__.Group object at 0x1071e8cb0>]), ([3], [<__main__.Group object at 0x1071e8fe0>]), ([3], [<__main__.Group object at 0x1071e8f20>]), ([3], [<__main__.Group object at 0x1071e8ef0>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e8c80>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e92e0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e92e0>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e92e0>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8c80>]), ([1], [<__main__.Group object at 0x1071e8c20>]), ([], [<__main__.Group object at 0x1071e8c20>]), ([], [<__main__.Group object at 0x1071e92e0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8da0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8da0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8c80>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8c80>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9190>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9190>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8ce0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8ce0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 2 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [3, 1, 1, 3])
+Looking for [3, 1, 1, 3] in ###????
+Complex: split into '###' and '???'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['???'])
+Complex: split into '###?' and '??'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###??' and '?'
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8f20>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8f20>]
+Complex, appending ([3], ['?', '?'])
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###???' and ''
+Looking for [3, 1, 1, 3] in ###???
+Complex: split into '###' and '??'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['??'])
+Complex: split into '###?' and '?'
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###??' and ''
+Looking for [3, 1, 1, 3] in ###??
+Complex: split into '###' and '?'
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], ['?'])
+Complex: split into '###?' and ''
+Looking for [3, 1, 1, 3] in ###?
+Complex: split into '###' and ''
+Looking for [3, 1, 1, 3] in ###
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [])]
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e9100>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e9100>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8ef0>]), ([3], [<__main__.Group object at 0x1071e8c20>]), ([3], [<__main__.Group object at 0x1071e9100>]), ([3], [])]
+ps: [3], gs: [<__main__.Group object at 0x1071e8ef0>]
+Complex, appending ([3], ['??'])
+ps: [3], gs: [<__main__.Group object at 0x1071e8c20>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: [<__main__.Group object at 0x1071e9100>]
+Complex, appending ([3], ['?'])
+ps: [3], gs: []
+Complex, appending ([3], [])
+Complex: returning [([3], [<__main__.Group object at 0x1071e8d40>]), ([3], [<__main__.Group object at 0x1071e8f80>]), ([3], [<__main__.Group object at 0x1071e8f20>, <__main__.Group object at 0x1071e8ce0>]), ([3], [<__main__.Group object at 0x1071e8ce0>]), ([3], [<__main__.Group object at 0x1071e8ef0>]), ([3], [<__main__.Group object at 0x1071e8c20>]), ([3], [<__main__.Group object at 0x1071e9100>]), ([3], [])]
+Found pattern: [3]
+entered _search(???, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ???
+Complex: split into '' and '??'
+Complex: appending ([], [<__main__.Group object at 0x1071e9070>])
+Complex: split into '?' and '?'
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], ['?'])
+ps: [], gs: []
+Complex, appending ([], ['?'])
+Complex: split into '??' and ''
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8a70>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8a70>]), ([1], []), ([], [])]
+ps: [], gs: [<__main__.Group object at 0x1071e8a70>]
+Complex, appending ([], ['?'])
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9070>]), ([1], [<__main__.Group object at 0x1071e8c80>]), ([], [<__main__.Group object at 0x1071e8c80>]), ([], [<__main__.Group object at 0x1071e8a70>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e91c0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e91c0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9070>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9070>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(?, 1 right-groups, [1, 3])
+Looking for [1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [3])
+Looking for [3] in ###
+Found pattern: [3]
+_search found a pattern!
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(??, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e9340>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e9340>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(?, 1 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###, 0 right-groups, [1, 3])
+Looking for [1, 3] in ###
+Found pattern: []
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: [3]
+entered _search(###, 0 right-groups, [1, 1, 3])
+Looking for [1, 1, 3] in ###
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8d40>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8d40>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 2 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 1 right-groups, [1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(###????, 1 right-groups, [1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e8f50>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e8f50>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 2 right-groups, [1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(###????, 2 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(??, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ??
+Complex: split into '' and '?'
+Complex: appending ([], [<__main__.Group object at 0x1071e87a0>])
+Complex: split into '?' and ''
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+ps: [1], gs: []
+Complex, appending ([1], [])
+ps: [], gs: []
+Complex, appending ([], [])
+Complex: returning [([], [<__main__.Group object at 0x1071e87a0>]), ([1], []), ([], [])]
+Found pattern: []
+entered _search(?, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(?, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 3 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [3]
+entered _search(###????, 3 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 4 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 5 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 4 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(?, 5 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ?
+Goldilox: [([1], []), ([], [])]
+Found pattern: [1]
+entered _search(###????, 4 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: [1]
+entered _search(###????, 4 right-groups, [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Found pattern: []
+entered _search(###????, 4 right-groups, [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3])
+Looking for [1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3, 1, 1, 3] in ###????
+Too Long
+Second Solution: 16
