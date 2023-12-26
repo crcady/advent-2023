@@ -84,6 +84,69 @@ class Segment:
 
         assert False, "Encountered an unexpected direction"
 
+    def isNub(self, handedness: str)->bool:
+        """Returns true if the segment is the middle segment of a nub"""
+        sequence = ''.join(self.previous.direction, self.direction, self.next.direction)
+        nub_sequences = {
+            'R': ['URD', 'RDL', 'DLU', 'LUR'],
+            'L': ['ULD', 'RUL', 'DRU', 'LDR']
+        }
+        return sequence in nub_sequences[handedness]
+
+    def getInternalNubArea(self)->tuple[Coord, Coord]:
+        """Returns a pair of coordinates with the *internal* area of the nub"""
+        previousDir = self.previous.direction
+
+        if previousDir == 'U': # Then the current segment is left or right
+            y1, y2 = self.min_y() + 1, self.max_y - 1
+            x1 = self.min_x() # Same as max_x
+            x2 = min(self.previous.max_x(), self.next.max_x())
+
+        elif previousDir == 'D': # Then the current segment is left or right
+            y1, y2 = self.min_y() + 1, self.max_y() - 1
+            x1 = self.min_x()
+            x2 = max(self.previous.min_x(), self.next.min_x())
+
+        elif previousDir == 'L': # Current segment is up or down
+            x1, x2 = self.min_x() + 1, self.max_x - 1
+            y1 = self.min_y()
+            y2 = max(self.previous.min_y(), self.next.min_y())
+
+        elif previousDir == 'R': # Current segment us up or down
+            x1, x2 = self.min_x() + 1, self.max_x - 1
+            y1 = self.min_y()
+            y2 = min(self.previous.max_y(), self.next.max_x())
+
+        else:
+            assert False, 'Unexpected direction found'
+
+        return ((x1, y1), (x2, y2))
+    
+    def extend(self, distance: int):
+        """If distance is positive, grow the end. If negative, shrink the start."""
+        if self.direction == 'R':
+            if distance > 0:
+                self.end = (self.end[0], self.end[1] + distance)
+            else:
+                self.start = (self.start[0], self.start[1] - distance)
+        elif self.direction == 'L':
+            if distance > 0:
+                self.end = (self.end[0], self.end[1] - distance)
+            else:
+                self.start = (self.start[0], self.start[1] + distance)
+        elif self.direction == 'D':
+            if distance > 0:
+                self.end = (self.end[0] + distance, self.end[1])
+            else:
+                self.start = (self.start[0] - distance, self.start[1])
+        else: #self.direction == 'U'
+            if distance > 0:
+                self.end = (self.end[0] - distance, self.end[1])
+            else:
+                self.start = (self.end[0] + distance, self.start[1])
+        
+        self.length += distance
+
 
 class Solver:
     """Parses the input and solves the problem"""
@@ -93,10 +156,7 @@ class Solver:
         with open(filename, "r") as f:
             current: Segment = None
             for line in f.readlines():
-                line = line.strip()
-                (direction, length_text, color_text) = line.split()
-                length = int(length_text)
-                color = color_text[1:-1]
+                (direction, length, color) = self._lineToSegment(line)
 
                 if current is None:
                     next_start: Coord = (0, 0)
@@ -112,6 +172,78 @@ class Solver:
 
         assert current.end == (0, 0), "Failed to make a loop"
         self.segments[0].previous = current
+
+        # Determine handedness
+        top_segments: list[Segment] = []
+        min_x = float('inf')
+
+        for s in self.segments:
+            x = s.min_x()
+            if x < min_x:
+                top_segments = [s]
+                min_x = x
+            elif x == min_x:
+                top_segments.append(s)
+
+        assert len(top_segments) >= 3, "Not enough segments found to compute handedness"
+        horizontal_segments = [s for s in top_segments if s.direction in ['L', 'R']]
+        assert len(top_segments) > 0, "No horizontal segments found"
+
+        if horizontal_segments[0].direction == 'L':
+            for s in horizontal_segments:
+                assert s.direction == 'L', 'Inconsistent handedness'
+            self.handedness = 'L'
+        else:
+            for s in horizontal_segments:
+                assert s.direction == 'R', 'Inconsistent handedness'
+            self.handedness = 'R'
+            
+
+    def _lineToSegment(self, line:str)->tuple[str, int, str]:
+        """Process a line of the input"""
+        (direction, length_text, color_text) = line.strip().split()
+        length = int(length_text)
+        color = color_text[1:-1] # Strip the curly braces, keep the hash
+        return (direction, length, color)
+
+    def checkArea(self, coords: tuple[Coord, Coord])->bool:
+        """Returns True if an area is clear"""
+        (c1, c2) = coords
+        (x1, y1) = c1
+        (x2, y2) = c2
+        min_x = min(x1, x2)
+        min_y = min(y1, y2)
+        max_x = max(x1, x2)
+        max_y = max(y1, y2)
+
+        for s in self.segments:
+            for c in [s.start, s.end]:
+                (x, y) = c
+                if x >= min_x and x<=max_x and y >= min_y and y <= max_y:
+                    return False
+        
+        return True
+
+    def combineStraightPaths(self):
+        """Combines any pairs of segments going in the same direction into a single segment"""
+
+        def combineWithNext(a: Segment)->bool:
+            b = a.next
+            if a.direction == b.direction:
+                a.length = a.length + b.length
+                a.end = b.end
+                self.segments.remove(b)
+                return True
+            return False
+
+        base = self.segments[0]
+        current = base
+        while current.next != base:
+            if not combineWithNext(current):
+                current = current.next
+
+        combineWithNext(current)
+
 
     def solve1(self):
         """Counts the total volume (aread) dug out"""
@@ -179,38 +311,59 @@ class Solver:
         return sum(row.count("#") + row.count(".") for row in board)
 
     def solve2(self):
-        pass
+        print(f"Starting with {len(self.segments)} segments")
+        self.combineStraightPaths()
+        print(f"After combining: {len(self.segments)} segments")
+
+        area = 0
+        # Iterate until we get down to a square
+        while len(self.segments) > 4:
+            candidates = sorted(self.segments, key=lambda x: x.length, reverse=True)
+            s = candidates.pop()
+            while not (s.isNub(self.handedness) and self.checkArea(s.getInternalNubArea)):
+                s = candidates.pop()
+
+            # Increase the found area
+            area += s.length * (min(s.previous.length, s.next.length) - 1)
+
+            # Delete the nub
+            if s.previous.length == s.next.length:
+                # Need to delete both segments
+                s.previous.previous.end = s.next.next.start
+                s.previous.previous.length += s.length
+                s.previous.previous.next = s.next.next
+                s.next.next.previous = s.previous.previous
+
+                self.segments.remove(s)
+                self.segments.remove(s.previous)
+                self.segments.remove(s.next)
+
+            elif s.previous.length < s.next.length:
+                # Delete the previous segment, resize the next one
+                s.previous.previous.extend(s.length)
+                s.next.extend(-s.previous.length)
+
+                s.previous.previous.next = s.next
+                s.next.previous = s.previous.previous
+
+                self.segments.remove(s)
+                self.segments.remove(s.previous)
+
+
+
+            # Combine straight paths
+            self.combineStraightPaths()
 
 
 class Solver2(Solver):
     """Uses the color hex as the direction and length"""
 
-    def __init__(self, filename):
-        self.segments: list[Segment] = []
-        with open(filename, "r") as f:
-            current: Segment = None
-            for line in f.readlines():
-                line = line.strip()
-                (_, _, color_text) = line.split()
-                color_hex = color_text[1:-1]
-                length = int(color_hex[1:6], base=16)
-                direction = ["R", "D", "L", "U"][int(color_hex[6])]
-
-                if current is None:
-                    next_start: Coord = (0, 0)
-                else:
-                    next_start = current.end
-
-                self.segments.append(
-                    Segment(next_start, length, direction, color_hex, current)
-                )
-
-                if current is not None:
-                    current.next = self.segments[-1]
-                current = self.segments[-1]
-
-        assert current.end == (0, 0), f"Failed to make a loop: {current.end}"
-        self.segments[0].previous = current
+    def _lineToSegment(self, line: str) -> tuple[str, int, str]:
+        (_, _, color_text) = line.strip().split()
+        color_hex = color_text[1:-1]
+        length = int(color_hex[1:6], base=16)
+        direction = ["R", "D", "L", "U"][int(color_hex[6])]
+        return (direction, length, color_hex)
 
 
 if __name__ == "__main__":
@@ -223,4 +376,4 @@ if __name__ == "__main__":
     solver2 = Solver2(filename)
 
     print(f"First Solution: {solver.solve1()}")
-    print(f"Second Solution: {solver2.solve1()}")
+    print(f"Second Solution: {solver2.solve2()}")
