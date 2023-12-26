@@ -316,7 +316,7 @@ class Solver:
         print(f"After combining: {len(self.segments)} segments")
 
         area = 0
-        # Iterate until we get down to a square
+        # Iterate until we get down to a rectangle
         while len(self.segments) > 4:
             candidates = sorted(self.segments, key=lambda x: x.length, reverse=True)
             s = candidates.pop()
@@ -349,6 +349,9 @@ class Solver:
                 self.segments.remove(s)
                 self.segments.remove(s.previous)
 
+            else: # s.previous.length > s.next.length
+                # Delete the next segment, resize the previous one
+                
 
 
             # Combine straight paths
