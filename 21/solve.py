@@ -22,6 +22,9 @@ class Solver():
                     col_number += 1
                 row_number += 1
 
+        self.height = row_number
+        self.width = col_number
+
     def solve1(self, steps: int):
         reachable_sets: list[set[Coord]] = [set([self.start])]
         for i in range(steps):
@@ -34,8 +37,17 @@ class Solver():
 
         return len(reachable_sets[-1])
 
-    def solve2(self):
-        pass
+    def solve2(self, steps:int):
+        last_set = set([self.start])
+        for i in range(steps):
+            new_set = set()
+            for (x, y) in last_set:
+                for (i, j) in [(x-1, y), (x+1, y), (x, y-1), (x, y+1)]:
+                    if (i % self.height, j % self.width) in self.reachable:
+                        new_set.add((i, j))
+            last_set = new_set
+
+        return len(last_set)
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
@@ -45,5 +57,5 @@ if __name__ == "__main__":
 
     solver = Solver(filename)
 
-    print(f"First Solution: {solver.solve1(64)}")
-    print(f"Second Solution: {solver.solve2()}")
+    print(f"First Solution: {solver.solve1(6)}")
+    print(f"Second Solution: {solver.solve2(500)}")
