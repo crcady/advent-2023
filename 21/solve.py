@@ -39,46 +39,75 @@ class Solver():
 
     def solve2(self, steps:int):
         # Begin with the starting point in the (0, 0) quadrant
-        last_dict: dict[Coord, set[Coord]] = {c: set() for c in self.reachable}
-        last_dict[self.start].add((0, 0))
+        last_dict: dict[Coord, set[Coord]] = {self.start: set([(0, 0)])}
 
         for _ in range(steps):
-            new_dict: dict[Coord, set[Coord]] = {c: set() for c in self.reachable}
+            new_dict: dict[Coord, set[Coord]] = {}
             for (x, y), s in last_dict.items():
-                if len(s) == 0:
-                    continue
 
                 # (x-1, y)
                 if x > 0:
-                    if (x-1, y) in self.reachable:
-                        new_dict[(x-1, y)].update(s)
+                    p = (x-1, y)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update(s)
+                        else:
+                            new_dict[p] = s.copy()
                 else:
-                    if (self.height-1, y) in self.reachable:
-                        new_dict[(self.height-1, y)].update((i-1, j) for (i, j) in s)
+                    p = (self.height-1, y)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update((i-1, j) for (i, j) in s)
+                        else:
+                            new_dict[p] = set((i-1, j) for (i, j) in s)
 
                 # (x+1, y)
                 if x+1 < self.height:
-                    if (x+1, y) in self.reachable:
-                        new_dict[(x+1, y)].update(s)
+                    p = (x+1, y)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update(s)
+                        else:
+                            new_dict[p] = s.copy()
                 else:
-                    if (0, y) in self.reachable:
-                        new_dict[(0, y)].update((i+1, j) for (i, j) in s)
+                    p = (0, y)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update((i+1, j) for (i, j) in s)
+                        else:
+                            new_dict[p] = set((i+1, j) for (i, j) in s)
 
                 # (x, y-1)
                 if y > 0:
-                    if (x, y-1) in self.reachable:
-                        new_dict[(x, y-1)].update(s)
+                    p = (x, y-1)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update(s)
+                        else:
+                            new_dict[p] = s.copy()
                 else:
-                    if (x, self.width-1) in self.reachable:
-                        new_dict[(x, self.width-1)].update((i, j-1) for (i, j) in s)
+                    p = (x, self.width-1)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update((i, j-1) for (i, j) in s)
+                        else:
+                            new_dict[p] = set((i, j-1) for (i, j) in s)
 
                 # (x, y+1)
                 if y+1 < self.width:
-                    if (x, y+1) in self.reachable:
-                        new_dict[(x, y+1)].update(s)
+                    p = (x, y+1)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update(s)
+                        else:
+                            new_dict[p] = s.copy()
                 else:
-                    if (x, 0) in self.reachable:
-                        new_dict[(x, 0)].update((i, j+1) for (i, j) in s)
+                    p = (x, 0)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update((i, j+1) for (i, j) in s)
+                        else:
+                            new_dict[p] = set((i, j+1) for (i, j) in s)
             
             last_dict = new_dict
 
