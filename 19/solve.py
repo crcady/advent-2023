@@ -18,6 +18,12 @@ class Expression:
             return lhs < self.literal
         else:
             return lhs > self.literal
+        
+    def negation(self)->Expression:
+        if self.operator == '<':
+            return Expression(self.variable, '>', self.literal - 1)
+        else: # self.operation == '>'
+            return Expression(self.variable, '<', self.literal + 1)
 
 class Workflow:
     """CLass for holding a workflow"""
@@ -45,6 +51,50 @@ class Workflow:
                 return rule[1]
         return self.default
 
+class ExpressionSet:
+    """Class for evaluating conjunctions of expressions"""
+
+    def __init__(self):
+        self.expr_dict: dict[str, list[Expression]] = {x: [] for x in ['x','m','a','s']}
+
+    def addExpr(self, expr: Expression):
+        self.expr_dict[expr.variable].append(expr)
+
+    @classmethod
+    def copy(cls, instance: ExpressionSet)->ExpressionSet:
+        es = cls()
+        for l in instance.expr_dict.values():
+            for expr in l:
+                es.addExpr(expr)
+
+        return es
+    
+    def count(self)->int:
+        combos = 1
+        #print('Counting an ExpressionSet')
+        for cat, expr_list in self.expr_dict.items(): # This is safe because the constructor makes 4 entries
+
+            lt = list(filter(lambda x: x.operator == '<', expr_list))
+            gt = list(filter(lambda x: x.operator == '>', expr_list))
+
+            if len(lt) > 0:
+                lt.sort(key=lambda x: x.literal)
+                lub = lt[0].literal
+            else:
+                lub = 4001
+            
+            if len(gt) > 0:
+                gt.sort(key=lambda x: x.literal)
+                glb = gt[-1].literal
+            else:
+                glb = 0
+            
+            combos *= (lub - glb - 1)
+
+            #print(f'  {glb} < {cat} < {lub}: {lub - glb - 1}')
+
+        #print(f'Total: {combos}')
+        return combos
 
 class Solver():
     def __init__(self, filename: str):
@@ -94,7 +144,35 @@ class Solver():
         return sum(self.scorePart(p) for p in accepted)
 
     def solve2(self):
-        pass
+        # We want to end up with a list of ExpressionSet s that result in a part being accepted.
+        work_queue: list[tuple[ExpressionSet, str]] = [(ExpressionSet(), 'in')]
+        workflow_dict = {wf.name: wf for wf in self.workflows}
+        accepted_list: list[ExpressionSet] = []
+
+        while work_queue:
+            (es, dest) = work_queue.pop()
+
+            if dest == 'A':
+                accepted_list.append(es)
+                continue
+            if dest == 'R':
+                continue
+
+            current_wf = workflow_dict[dest]
+            for (expr, next_dest) in current_wf.rules:
+                # expr is satisfied
+                satisfied_es = ExpressionSet.copy(es)
+                satisfied_es.addExpr(expr)
+                work_queue.append((satisfied_es, next_dest))
+
+                # expr is not satisfied
+                es.addExpr(expr.negation())
+
+            # No rules were satisfied, so we need to work on the default
+            work_queue.append((es, current_wf.default))
+
+
+        return sum(es.count() for es in accepted_list)
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
