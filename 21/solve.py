@@ -41,7 +41,7 @@ class Solver():
         # Begin with the starting point in the (0, 0) quadrant
         last_dict: dict[Coord, set[Coord]] = {self.start: set([(0, 0)])}
 
-        for _ in range(steps):
+        for step in range(steps):
             new_dict: dict[Coord, set[Coord]] = {}
             for (x, y), s in last_dict.items():
 
@@ -109,6 +109,8 @@ class Solver():
                         else:
                             new_dict[p] = set((i, j+1) for (i, j) in s)
             
+            first_map_count = len(list(filter(lambda x: (0,0) in x, new_dict.values())))
+            print(f'Step {step+1}: First map has {first_map_count} possible spaces')
             last_dict = new_dict
 
         return sum(len(x) for x in last_dict.values())
@@ -122,4 +124,4 @@ if __name__ == "__main__":
     solver = Solver(filename)
 
     print(f"First Solution: {solver.solve1(6)}")
-    print(f"Second Solution: {solver.solve2(1000)}")
+    print(f"Second Solution: {solver.solve2(400)}")
