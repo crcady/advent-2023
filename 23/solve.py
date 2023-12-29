@@ -8,6 +8,7 @@ type Coord = tuple[int, int]
 class Path:
     current: Coord
     history: list[set[Coord]] = field(default_factory=list)
+    coord_stack: list[list[tuple[Coord]]] = field(default_factory=list, init=False)
 
     def __post_init__(self):
         self.history.append(set())
@@ -22,10 +23,40 @@ class Path:
         self.history[-1].add(coord)
 
     def steps(self)->int:
-        return sum(len(x) for x in self.history) - 1
+        return sum(len(x) for x in self.history)
     
-    def fork(self)->Path:
-        return Path(self.current, self.history.copy())
+    def fork(self, next_steps: list[Coord]):
+        next = next_steps.pop()
+        self.history.append(set())
+        if len(next) == 1:
+            self.current = next[0]
+        else:
+            self.see(next[0])
+            self.current = next[1]
+
+        self.coord_stack.append(next_steps)
+    
+    def backtrack(self)->bool:
+        """Returns True if we can keep going"""
+        if len(self.coord_stack) == 0:
+            return False
+        
+        next_steps = self.coord_stack[-1]
+        if len(next_steps) == 0:
+            self.history.pop()
+            self.coord_stack.pop()
+            return self.backtrack()
+        
+        next = next_steps.pop()
+        self.history[-1].clear()
+        if len(next) == 1:
+            self.current = next[0]
+        else:
+            self.see(next[0])
+            self.current = next[1]
+
+        return True
+
 
 class Solver():
     
@@ -49,13 +80,19 @@ class Solver():
         self.end: Coord = ((x-2, y-3))
 
     def solve1(self):
-        walks: list[Path] = []
-        finished_paths: list[Path] = []
-        walks.append(Path(self.start))
+        path = Path(self.start)
+        longest_walk = 0
+        print(f'The longest theoretical path length is {len(self.paths)}')
         
-        while walks:
-            path = walks.pop()
+        keep_going = True
+        while keep_going:
             (x, y) = path.current
+            if path.current == self.end:
+                steps = path.steps()
+                if steps > longest_walk:
+                    print(f'Longest path to date: {steps+2}')
+                    longest_walk = steps
+
             path.see(path.current)
 
             next_walks: list[tuple[Coord]] = []
@@ -93,30 +130,20 @@ class Solver():
                         next_walks.append((east, next))
 
             if next_walks:
-                if len(next_walks) == 1: # Just keep using the same path object
+                if len(next_walks) == 1:
                     t = next_walks[0]
                     if len(t) == 1:
                         path.current = t[0]
-                        walks.append(path)
                     else:
                         path.see(t[0])
                         path.current = t[1]
-                        walks.append(path)
                 else:
-                    for t in next_walks:
-                        p = path.fork()
-                        if len(t) == 1:
-                            p.current = t[0]
-                            walks.append(p)
-                        else:
-                            p.see(t[0])
-                            p.current = t[1]
-                            walks.append(p)
+                    path.fork(next_walks)
+
             else:
-                finished_paths.append(path)
+                keep_going = path.backtrack()
       
-        good_paths = list(filter(lambda p: not p.unseen(self.end), finished_paths))
-        return max(x.steps() for x in good_paths)
+        return longest_walk+2
 
 
     def solve2(self):
@@ -131,5 +158,5 @@ if __name__ == "__main__":
     solver = Solver(filename)
     solver2 = Solver(filename, True)
 
-    print(f"First Solution: {solver.solve1()}")
-    #print(f"Second Solution: {solver2.solve1()}")
+    #print(f"First Solution: {solver.solve1()}")
+    print(f"Second Solution: {solver2.solve1()}")
