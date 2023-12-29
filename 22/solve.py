@@ -134,8 +134,40 @@ class Solver:
         return len(brick_list) - len(key_bricks)
 
     def solve2(self):
-        pass
+        settled = self.initial_stack.settled()
+        brick_list = settled.bricks
 
+        supported_by = {b.idx: [] for b in brick_list}
+        supports = {b.idx: [] for b in brick_list}
+
+        for upper in brick_list:
+            for lower in brick_list:
+                if upper.min_z() == lower.max_z() + 1 and upper.collides(lower):
+                    supported_by[upper.idx].append(lower.idx)
+                    supports[lower.idx].append(upper.idx)
+        
+        count = 0
+
+        for brick in brick_list:
+            # Make deep copies so that we can safely delete items
+            new_supported_by = {idx: list(idx_list) for idx, idx_list in supported_by.items()}
+            new_supports = {idx: list(idx_list) for idx, idx_list in supports.items()}
+
+            fallen_bricks = [brick.idx]
+            fallen_count = -1 # The evaporated brick didn't *fall*
+            while fallen_bricks:
+                idx = fallen_bricks.pop()
+                fallen_count += 1
+
+                supported = new_supports[idx]
+                for i in supported:
+                    new_supported_by[i].remove(idx)
+                    if len(new_supported_by[i]) == 0:
+                        fallen_bricks.append(i)
+            
+            count += fallen_count
+
+        return count
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
