@@ -7,7 +7,25 @@ type Coord = tuple[int, int]
 @dataclass
 class Path:
     current: Coord
-    history: set[Coord] = field(default_factory=set)
+    history: list[set[Coord]] = field(default_factory=list)
+
+    def __post_init__(self):
+        self.history.append(set())
+
+    def unseen(self, coord: Coord)->bool:
+        for s in self.history:
+            if coord in s:
+                return False
+        return True
+    
+    def see(self, coord: Coord):
+        self.history[-1].add(coord)
+
+    def steps(self)->int:
+        return sum(len(x) for x in self.history) - 1
+    
+    def fork(self)->Path:
+        return Path(self.current, self.history.copy())
 
 class Solver():
     
@@ -38,61 +56,67 @@ class Solver():
         while walks:
             path = walks.pop()
             (x, y) = path.current
-            next_walks: list[Path] = []
+            path.see(path.current)
+
+            next_walks: list[tuple[Coord]] = []
             
             north = (x-1, y)
-            if north in self.paths and north not in path.history:
+            if north in self.paths and path.unseen(north):
                 tile = self.paths[north]
                 if tile == '.':
-                    hist = path.history.copy()
-                    hist.add(path.current)
-                    next_walks.append(Path(north, hist))
+                    next_walks.append((north,))
             
             west = (x, y-1)
-            if west in self.paths and west not in path.history:
+            if west in self.paths and path.unseen(west):
                 tile = self.paths[west]
                 if tile == '.':
-                    hist = path.history.copy()
-                    hist.add(path.current)
-                    next_walks.append(Path(west, hist))
+                    next_walks.append((west,))
 
             south = (x+1, y)
-            if south in self.paths and south not in path.history:
+            if south in self.paths and path.unseen(south):
                 tile = self.paths[south]
                 if tile == '.':
-                    hist = path.history.copy()
-                    hist.add(path.current)
-                    next_walks.append(Path(south, hist))
+                    next_walks.append((south,))
                 elif tile == 'v':
                     next = (x+2, y)
-                    if next not in path.history:
-                        hist = path.history.copy()
-                        hist.add(path.current)
-                        hist.add(south)
-                        next_walks.append(Path(next, hist))
+                    if path.unseen(next):
+                        next_walks.append((south, next))
             
             east = (x, y+1)
-            if east in self.paths and east not in path.history:
+            if east in self.paths and path.unseen(east):
                 tile = self.paths[east]
                 if tile == '.':
-                    hist = path.history.copy()
-                    hist.add(path.current)
-                    next_walks.append(Path(east, hist))
+                    next_walks.append((east,))
                 elif tile == '>':
                     next = (x, y+2)
-                    if next not in path.history:
-                        hist = path.history.copy()
-                        hist.add(path.current)
-                        hist.add(east)
-                        next_walks.append(Path(next, hist))
+                    if path.unseen(next):
+                        next_walks.append((east, next))
 
             if next_walks:
-                walks.extend(next_walks)
+                if len(next_walks) == 1: # Just keep using the same path object
+                    t = next_walks[0]
+                    if len(t) == 1:
+                        path.current = t[0]
+                        walks.append(path)
+                    else:
+                        path.see(t[0])
+                        path.current = t[1]
+                        walks.append(path)
+                else:
+                    for t in next_walks:
+                        p = path.fork()
+                        if len(t) == 1:
+                            p.current = t[0]
+                            walks.append(p)
+                        else:
+                            p.see(t[0])
+                            p.current = t[1]
+                            walks.append(p)
             else:
                 finished_paths.append(path)
       
-        good_paths = list(filter(lambda p: self.end in p.history, finished_paths))
-        return max(len(x.history) for x in good_paths)
+        good_paths = list(filter(lambda p: not p.unseen(self.end), finished_paths))
+        return max(x.steps() for x in good_paths)
 
 
     def solve2(self):
@@ -108,4 +132,4 @@ if __name__ == "__main__":
     solver2 = Solver(filename, True)
 
     print(f"First Solution: {solver.solve1()}")
-    print(f"Second Solution: {solver2.solve1()}")
+    #print(f"Second Solution: {solver2.solve1()}")
