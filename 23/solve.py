@@ -5,6 +5,23 @@ import sys
 type Coord = tuple[int, int]
 
 @dataclass
+class Hallway:
+    junctions: tuple[Coord, Coord]
+    size: int
+
+    def other_end(self, coord: Coord)->Coord:
+        if coord == self.junctions[0]:
+            return self.junctions[1]
+        else:
+            return self.junctions[0]
+        
+@dataclass
+class HallPath:
+    current: Coord
+    junctions: set[Coord] = field(default_factory=set)
+    length: int = 0
+
+@dataclass
 class Path:
     current: Coord
     history: list[set[Coord]] = field(default_factory=list)
@@ -77,7 +94,7 @@ class Solver():
                 x += 1
         
         self.start: Coord = (0, 1)
-        self.end: Coord = ((x-2, y-3))
+        self.end: Coord = ((x-1, y-2))
 
     def solve1(self):
         path = Path(self.start)
@@ -90,7 +107,7 @@ class Solver():
             if path.current == self.end:
                 steps = path.steps()
                 if steps > longest_walk:
-                    print(f'Longest path to date: {steps+2}')
+                    print(f'Longest path to date: {steps}')
                     longest_walk = steps
 
             path.see(path.current)
@@ -143,12 +160,105 @@ class Solver():
             else:
                 keep_going = path.backtrack()
       
-        return longest_walk+2
+        return longest_walk
 
 
     def solve2(self):
-        pass
+        hallways: list[Hallway] = []
+        junctions: set[Coord] = set()
 
+        unexplored: list[tuple[Coord, Coord]] = [(self.start, (self.start[0]+1, self.start[1]))]
+        visited: set[Coord] = set()
+
+        while unexplored:
+            (j1, c) = unexplored.pop()
+            if c in visited: #Four-way intersections meawn we can end up with the same hallway on the stack twice
+                continue
+            junctions.add(j1)
+            visited.add(c)
+            current_set = {j1, c}
+            
+            (x, y) = c
+            north = (x-1, y)
+            south = (x+1, y)
+            east = (x, y+1)
+            west = (x, y-1)
+
+            neighbors = []
+            for p in [north, south, east, west]:
+                if p in self.paths and p not in current_set:
+                    neighbors.append(p)
+            
+            while len(neighbors) == 1:
+                c = neighbors.pop()
+                visited.add(c)
+                current_set.add(c)
+
+                if c == self.end:
+                    neighbors = []
+                    break
+                
+                (x, y) = c
+                north = (x-1, y)
+                south = (x+1, y)
+                east = (x, y+1)
+                west = (x, y-1)
+
+                neighbors = []
+                for p in [north, south, east, west]:
+                    if p in self.paths and p not in current_set:
+                        neighbors.append(p)
+
+            current_set.remove(c) #c is now the second junction
+            current_set.remove(j1)
+            hallways.append(Hallway((j1, c), len(current_set)))
+
+            for p in neighbors:
+                if p not in visited:
+                    unexplored.append((c, p))
+
+        junctions.add(self.end)
+
+        print(f'There are {len(self.paths)} paths. {sum(x.size for x in hallways)} of those are in {len(hallways)} hallways. There are {len(junctions)} junctions.')
+        print(f'{len(visited)} paths were visited')
+
+        junction_map: dict[Coord, list[Hallway]] = {j: [] for j in junctions}
+        for h in hallways:
+            for j in h.junctions:
+                junction_map[j].append(h)
+
+        paths: list[HallPath] = [HallPath(self.start)]
+        longest_path = 0
+
+        while paths:
+            hp = paths.pop()
+            if hp.current == self.end:
+                if hp.length > longest_path:
+                    print(f'Longest path to date: {hp.length}')
+                    longest_path = hp.length
+                continue
+
+            hp.junctions.add(hp.current)
+            halls = junction_map[hp.current]
+            next: list[Hallway] = []
+            for h in halls:
+                potential_next = h.other_end(hp.current)
+                if potential_next not in hp.junctions:
+                    next.append(h)
+            
+            if len(next) == 1: # Easy case
+                next_hallway = next.pop()
+                hp.length += next_hallway.size + 1 #Account for next junction
+                hp.current = next_hallway.other_end(hp.current)
+                paths.append(hp)
+
+            if len(next) > 1: # Need to fork
+                for next_hallway in next:
+                    path = HallPath(next_hallway.other_end(hp.current), hp.junctions.copy(), hp.length + next_hallway.size + 1)
+                    paths.append(path)
+
+        return longest_path
+    
 if __name__ == "__main__":
     if len(sys.argv) > 1:
         filename = sys.argv[1]
@@ -158,5 +268,5 @@ if __name__ == "__main__":
     solver = Solver(filename)
     solver2 = Solver(filename, True)
 
-    #print(f"First Solution: {solver.solve1()}")
-    print(f"Second Solution: {solver2.solve1()}")
+    print(f"First Solution: {solver.solve1()}")
+    print(f"Second Solution: {solver.solve2()}")
