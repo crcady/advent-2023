@@ -2,6 +2,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 import numpy as np
 import sys
+import z3
 
 type Point2D = tuple[float, float]
 type Point3D = tuple[float, float, float]
@@ -67,8 +68,36 @@ class Solver:
 
 
     def solve2(self):
-        pass
+        # We need a z3 solver to add our constraints to
+        s = z3.Solver()
 
+        # We need to find an initial position and a velocity for the rock
+        x0 = z3.Int('x0')
+        y0 = z3.Int('y0')
+        z0 = z3.Int('z0')
+
+        vx = z3.Int('vx')
+        vy = z3.Int('vy')
+        vz = z3.Int('vz')
+
+        for i in range(len(self.hailstones)):
+            h = self.hailstones[i]
+            (hx0, hy0, hz0) = map(int, h.position) # These were floats for numpy
+            (hvx, hvy, hvz) = map(int, h.velocity) # Also floats for numpy
+
+            t = z3.Int(f"t{i}")
+            s.add(t > 0)
+            s.add(x0 + t*vx == hx0 + t*hvx)
+            s.add(y0 + t*vy == hy0 + t*hvy)
+            s.add(z0 + t*vz == hz0 + t*hvz)
+        
+        print (s.check())
+        m = s.model()
+        x = m[x0].as_long()
+        y = m[y0].as_long()
+        z = m[z0].as_long()
+
+        return x + y + z
 
 if __name__ == "__main__":
     if len(sys.argv) > 1:
