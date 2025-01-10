@@ -1,7 +1,25 @@
 from __future__ import annotations
 import sys
+from timeit import default_timer as timer
 
 type Coord = tuple[int, int]
+type Plot = frozenset[Coord]
+
+def initial_plot(start: Coord) -> Plot:
+    return frozenset([start])
+
+def neighbors(plot: Plot) -> Plot:
+    n: list[Coord] = []
+    for c in plot:
+        n.append((c[0]-1, c[1]))
+        n.append((c[0]+1, c[1]))
+        n.append((c[0], c[1]-1))
+        n.append((c[0], c[1]+1))
+
+    return frozenset(n)
+
+def next_plot(current_plot: Plot, open_areas: Plot) -> Plot:
+    return open_areas.intersection(neighbors(current_plot))
 
 class Solver():
     def __init__(self, filename: str):
@@ -25,7 +43,8 @@ class Solver():
         self.height = row_number
         self.width = col_number
 
-    def solve1(self, steps: int):
+    def solve1(self, steps: int) -> int:
+        """Naive solver for part 1"""
         reachable_sets: list[set[Coord]] = [set([self.start])]
         for i in range(steps):
             new_set = set()
@@ -36,86 +55,27 @@ class Solver():
             reachable_sets.append(new_set)
 
         return len(reachable_sets[-1])
+    
+    def solve2(self, steps: int) -> int:
+        """Memoizing solver for part 1"""
+        current = initial_plot(self.start)
+        reachable = frozenset(self.reachable)
 
-    def solve2(self, steps:int):
-        # Begin with the starting point in the (0, 0) quadrant
-        last_dict: dict[Coord, set[Coord]] = {self.start: set([(0, 0)])}
+        cache: dict[Plot, Plot] = {}
 
-        for step in range(steps):
-            new_dict: dict[Coord, set[Coord]] = {}
-            for (x, y), s in last_dict.items():
+        for _ in range(steps):
+            if current in cache:
+                current = cache[current]
+            else:
+                next = next_plot(current, reachable)
+                cache[current] = next
+                current = next
 
-                # (x-1, y)
-                if x > 0:
-                    p = (x-1, y)
-                    if p in self.reachable:
-                        if p in new_dict:
-                            new_dict[p].update(s)
-                        else:
-                            new_dict[p] = s.copy()
-                else:
-                    p = (self.height-1, y)
-                    if p in self.reachable:
-                        if p in new_dict:
-                            new_dict[p].update((i-1, j) for (i, j) in s)
-                        else:
-                            new_dict[p] = set((i-1, j) for (i, j) in s)
+        return len(current)
 
-                # (x+1, y)
-                if x+1 < self.height:
-                    p = (x+1, y)
-                    if p in self.reachable:
-                        if p in new_dict:
-                            new_dict[p].update(s)
-                        else:
-                            new_dict[p] = s.copy()
-                else:
-                    p = (0, y)
-                    if p in self.reachable:
-                        if p in new_dict:
-                            new_dict[p].update((i+1, j) for (i, j) in s)
-                        else:
-                            new_dict[p] = set((i+1, j) for (i, j) in s)
-
-                # (x, y-1)
-                if y > 0:
-                    p = (x, y-1)
-                    if p in self.reachable:
-                        if p in new_dict:
-                            new_dict[p].update(s)
-                        else:
-                            new_dict[p] = s.copy()
-                else:
-                    p = (x, self.width-1)
-                    if p in self.reachable:
-                        if p in new_dict:
-                            new_dict[p].update((i, j-1) for (i, j) in s)
-                        else:
-                            new_dict[p] = set((i, j-1) for (i, j) in s)
-
-                # (x, y+1)
-                if y+1 < self.width:
-                    p = (x, y+1)
-                    if p in self.reachable:
-                        if p in new_dict:
-                            new_dict[p].update(s)
-                        else:
-                            new_dict[p] = s.copy()
-                else:
-                    p = (x, 0)
-                    if p in self.reachable:
-                        if p in new_dict:
-                            new_dict[p].update((i, j+1) for (i, j) in s)
-                        else:
-                            new_dict[p] = set((i, j+1) for (i, j) in s)
-            
-            first_map_count = len(list(filter(lambda x: (0,0) in x, new_dict.values())))
-            print(f'Step {step+1}: First map has {first_map_count} possible spaces')
-            last_dict = new_dict
-
-        return sum(len(x) for x in last_dict.values())
-
+   
 if __name__ == "__main__":
+    steps = 256
     if len(sys.argv) > 1:
         filename = sys.argv[1]
     else:
@@ -123,5 +83,8 @@ if __name__ == "__main__":
 
     solver = Solver(filename)
 
-    print(f"First Solution: {solver.solve1(6)}")
-    print(f"Second Solution: {solver.solve2(400)}")
+    print(f"First Solution: {solver.solve1(steps)}")
+    start = timer()
+    ans2 = solver.solve2(steps)
+    end = timer()
+    print(f"Took {steps} steps in {end - start} seconds, got {ans2}")
