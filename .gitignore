@@ -161,3 +161,4 @@ cython_debug/
 
 # Input files - shouldn't be commited per the FAQ for AoC
 *input
+*.csv

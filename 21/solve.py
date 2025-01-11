@@ -72,10 +72,98 @@ class Solver():
                 current = next
 
         return len(current)
+    
+    def solve3(self, seconds: int) -> int:
+        # Begin with the starting point in the (0, 0) quadrant
+        last_dict: dict[Coord, set[Coord]] = {self.start: set([(0, 0)])}
+        
 
+        file = open("output.csv", "w")
+        steps = 1
+
+        start_time = timer()
+        last_time = start_time
+        while last_time - start_time < float(seconds):
+            new_dict: dict[Coord, set[Coord]] = {}
+            for (x, y), s in last_dict.items():
+
+                # (x-1, y)
+                if x > 0:
+                    p = (x-1, y)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update(s)
+                        else:
+                            new_dict[p] = s.copy()
+                else:
+                    p = (self.height-1, y)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update((i-1, j) for (i, j) in s)
+                        else:
+                            new_dict[p] = set((i-1, j) for (i, j) in s)
+
+                # (x+1, y)
+                if x+1 < self.height:
+                    p = (x+1, y)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update(s)
+                        else:
+                            new_dict[p] = s.copy()
+                else:
+                    p = (0, y)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update((i+1, j) for (i, j) in s)
+                        else:
+                            new_dict[p] = set((i+1, j) for (i, j) in s)
+
+                # (x, y-1)
+                if y > 0:
+                    p = (x, y-1)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update(s)
+                        else:
+                            new_dict[p] = s.copy()
+                else:
+                    p = (x, self.width-1)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update((i, j-1) for (i, j) in s)
+                        else:
+                            new_dict[p] = set((i, j-1) for (i, j) in s)
+
+                # (x, y+1)
+                if y+1 < self.width:
+                    p = (x, y+1)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update(s)
+                        else:
+                            new_dict[p] = s.copy()
+                else:
+                    p = (x, 0)
+                    if p in self.reachable:
+                        if p in new_dict:
+                            new_dict[p].update((i, j+1) for (i, j) in s)
+                        else:
+                            new_dict[p] = set((i, j+1) for (i, j) in s)
+
+            count = sum(len(x) for x in new_dict.values())
+            new_time = timer()
+            file.write(",".join(str(x) for x in [steps, count, new_time-last_time]) + "\n")
+
+            last_dict = new_dict
+            last_time = new_time
+            steps += 1
+
+        file.close()
+        return steps - 1
    
 if __name__ == "__main__":
-    steps = 256
+    steps = 3600
     if len(sys.argv) > 1:
         filename = sys.argv[1]
     else:
@@ -83,8 +171,5 @@ if __name__ == "__main__":
 
     solver = Solver(filename)
 
-    print(f"First Solution: {solver.solve1(steps)}")
-    start = timer()
-    ans2 = solver.solve2(steps)
-    end = timer()
-    print(f"Took {steps} steps in {end - start} seconds, got {ans2}")
+    #print(f"First Solution: {solver.solve1(steps)}")
+    print(f"{solver.solve3(steps)} steps taken in {steps} seconds")
