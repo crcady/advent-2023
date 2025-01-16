@@ -78,12 +78,12 @@ class Solver():
         last_dict: dict[Coord, set[Coord]] = {self.start: set([(0, 0)])}
         
 
-        file = open("output.csv", "w")
+        file = open("tiny_output.csv", "w")
         steps = 1
 
         start_time = timer()
         last_time = start_time
-        while last_time - start_time < float(seconds):
+        while steps < 5000:
             new_dict: dict[Coord, set[Coord]] = {}
             for (x, y), s in last_dict.items():
 
